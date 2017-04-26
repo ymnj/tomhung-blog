@@ -1,2 +1,4 @@
-# tomhung-wp-theme
-Tom Hung Wordpress Theme
+#Grav CMS
+
+####
+Grab flat file CMS for Tom Hung Portfolio
