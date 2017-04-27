@@ -1,4 +1,3 @@
-#Grav CMS
+# Grav CMS
 
-####
-Grab flat file CMS for Tom Hung Portfolio
+#### Grab flat file CMS for Tom Hung Portfolio
