@@ -1,3 +1,92 @@
+$dark-color: #212121;
+$active-color: #ff4081;
+
 body {
-	background-color: red;
+	background-color: white;
+}
+
+#logo {
+	width: 40px;
+	height: 40px;
+	margin-top: 10px;
+}
+
+nav {
+		//Hide Nav on scroll down
+	.nav-wrapper.headroom--unpinned {
+		top: -64px;
+		// background: url('../assets/transparent.svg') center / cover;
+	}
+
+	.nav-wrapper.headroom--pinned {
+		background-color: #fff;
+	}
+
+	.nav-wrapper.headroom--top {
+	 	//background: url('../assets/transparent.svg') center / cover;
+	 	background-color: transparent;
+	}
+}
+
+.navbar-fixed {
+	height: 64px;
+
+	.nav-wrapper {
+		z-index: 5;
+		width: 100%;
+		padding: 0 10%;
+		margin: 0 auto;
+		top: 0;
+		transition: all 1s ease;
+
+		ul.right {
+			a {
+				padding: 0;
+				margin: 0 50px;
+				color: $dark-color;
+			  position: relative;
+			  letter-spacing: 2px;
+			}
+			a:last-child {
+				margin-right: 0;
+			}
+			a:before {
+			  content: "";
+			  position: absolute;
+			  width: 100%;
+			  height: 2px;
+			  bottom: 15px;
+			  left: 0;
+			  background-color: $active-color;
+			  visibility: hidden;
+			  transform: scaleX(0);
+			  transition: all 0.3s ease-in-out 0s;
+			}
+			a:hover:before {
+			  visibility: visible;
+			  transform: scaleX(1);
+			}
+			a:hover {
+				background-color: transparent;
+			}
+		}
+
+		.headroom--unpinned {
+			top: -64px;
+			// background: url('../assets/transparent.svg') center / cover;
+		}
+
+		.headroom--pinned {
+			background-color: #fff;
+		}
+
+		.headroom--top {
+		 	//background: url('../assets/transparent.svg') center / cover;
+		 	background-color: transparent;
+		}
+	}
+}
+
+#blog-content {
+	height: 4000px;
 }
