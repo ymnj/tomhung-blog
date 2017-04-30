@@ -24,7 +24,7 @@
 	  </div>
 
 	  <div id="blog-content">
-	  	
+	  	<?php echo content();?>
 	  </div>
 	</div>
 
