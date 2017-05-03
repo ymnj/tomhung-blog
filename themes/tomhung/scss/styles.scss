@@ -6,12 +6,18 @@ body {
 }
 
 #logo {
+	transition: width 600ms,
+								height 600ms;
 	width: 40px;
 	height: 40px;
 	margin-top: 10px;
 }
 
 nav {
+	.brand-logo.left{
+		position: relative;
+	}
+
 		//Hide Nav on scroll down
 	.nav-wrapper.headroom--unpinned {
 		top: -64px;
@@ -87,12 +93,29 @@ nav {
 	}
 }
 
+@media (max-width: 450px){
+
+	img#logo {
+		width: 20px;
+		height: 20px;
+	}
+
+	.navbar-fixed .nav-wrapper ul.right {
+		a {
+			font-size: 1em;
+			margin: 0 25px;
+	  	letter-spacing: 1px;
+		}
+	}
+}
+
 
 /************************ ARTICLE SNIPPET ON MAIN PAGE ************************/
 
 article.post {
 	margin-bottom: 50px;
 	background-color: #eee;
+	text-transform: uppercase;
 }
 
 #blog-content {
@@ -116,6 +139,11 @@ article.post {
 		}
 	}
 
+	.cat-links {
+		margin: 2.5% 0;
+		text-align: center;
+	}
+
 	.entry-header, .entry-date, .entry-content, .entry-footer {
 		width: 80%;
 		margin: 0 auto;
@@ -128,12 +156,11 @@ article.post {
 	.entry-title {
 		text-align: center;
 		font-size: 2em;
-		margin-bottom: 2%;
-		text-transform: uppercase;
+		margin: 2.5% 0;
 	}
 
 	.entry-date {
-		margin-bottom: 5%;
+		padding-bottom: 2.5%;
 		text-align: center;
 	}
 
@@ -142,13 +169,21 @@ article.post {
 		text-align: center;
 	}
 	
-	//Post images
-	// p>img {
-	// 	width: 80%;
-	// 	margin: 0 auto;
-	// 	display: block;
-	// }
 }
+
+
+
+.navigation.pagination {
+	text-align: center;
+	text-transform: uppercase;
+
+	.nav-links a {
+		margin: 2.5%;
+		font-size: 2em;
+	}
+}
+
+
 
 
 @media (max-width: 960px) {
