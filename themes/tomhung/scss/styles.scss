@@ -114,8 +114,19 @@ nav {
 
 article.post {
 	margin-bottom: 50px;
-	background-color: #eee;
+	background-color: #1F2128;
 	text-transform: uppercase;
+}
+
+article.post:hover {
+	transition: box-shadow 500ms;
+	-webkit-box-shadow: 0px 0px 19px 1px rgba(0,0,0,0.52);
+	-moz-box-shadow: 0px 0px 19px 1px rgba(0,0,0,0.52);
+	box-shadow: 0px 0px 19px 1px rgba(0,0,0,0.52);
+
+	.entry-title {
+		letter-spacing: 1px;
+	}
 }
 
 #blog-content {
@@ -140,6 +151,7 @@ article.post {
 	}
 
 	.cat-links {
+		color: #ff4081;
 		margin: 2.5% 0;
 		text-align: center;
 	}
@@ -154,6 +166,8 @@ article.post {
 	}
 
 	.entry-title {
+		transition: letter-spacing 500ms;
+		color: #D4D4D4;
 		text-align: center;
 		font-size: 2em;
 		margin: 2.5% 0;
@@ -162,16 +176,20 @@ article.post {
 	.entry-date {
 		padding-bottom: 2.5%;
 		text-align: center;
+		color: #ff4081;
 	}
 
 	.more-link {
 		margin-top: 5% 0;
 		text-align: center;
 	}
+
+	.cat-links, .entry-date {
+		letter-spacing: 8px;
+		font-size: 0.8em;
+	}
 	
 }
-
-
 
 .navigation.pagination {
 	text-align: center;

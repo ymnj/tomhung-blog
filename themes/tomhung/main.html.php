@@ -2,7 +2,7 @@
 
 <?php foreach ($posts as $p): ?>
 
-    <a target="_blank" href="<?php echo $p->url; ?>">
+    <a href="<?php echo $p->url; ?>">
     <article class="post type-post hentry <?php if (!empty($p->image) || !empty ($p->audio) || !empty ($p->video)):?>has-post-thumbnail<?php endif;?>">
         
         <?php if (!empty($p->image)):?>
