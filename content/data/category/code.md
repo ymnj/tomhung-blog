@@ -1,4 +1,4 @@
-<!--t Code t-->
-<!--d  d-->
+<!--t code t-->
+<!--d Tom Hung. Front-end technologies, SEO, CMS and all things related to code and web development. d-->
 
-Code 101
+Tom Hung. Front-end technologies, SEO, CMS and all things related to code and web development.

@@ -14,6 +14,7 @@ body {
 }
 
 nav {
+
 	.brand-logo.left{
 		position: relative;
 	}
@@ -113,13 +114,13 @@ nav {
 /************************ ARTICLE SNIPPET ON MAIN PAGE ************************/
 
 article.post {
-	margin-bottom: 50px;
+
+	margin-bottom: 100px;
 	background-color: #1F2128;
-	text-transform: uppercase;
+	transition: box-shadow 500ms ease-in-out;
 }
 
-article.post:hover {
-	transition: box-shadow 500ms;
+#blog-content a > article.post:hover {
 	-webkit-box-shadow: 0px 0px 19px 1px rgba(0,0,0,0.52);
 	-moz-box-shadow: 0px 0px 19px 1px rgba(0,0,0,0.52);
 	box-shadow: 0px 0px 19px 1px rgba(0,0,0,0.52);
@@ -131,8 +132,9 @@ article.post:hover {
 
 #blog-content {
 	transition: width 500ms;
-	width: 960px;
+	width: 750px;
 	margin: 100px auto 0;
+	color: #D4D4D4;
 
 	a {
 		color: inherit;
@@ -142,6 +144,7 @@ article.post:hover {
 	.post-thumbnail {
 		width: 100%;
 		height: 500px;
+		border: 1px solid black;
 
 		img {
 			width: 100%;
@@ -154,6 +157,7 @@ article.post:hover {
 		color: #ff4081;
 		margin: 2.5% 0;
 		text-align: center;
+		text-transform: uppercase;
 	}
 
 	.entry-header, .entry-date, .entry-content, .entry-footer {
@@ -163,20 +167,31 @@ article.post:hover {
 
 	.entry-content {
 		padding-bottom: 1.78rem;
+
+		img {
+			width: 100%;
+		}
+
+		p {
+			color: #DFDFDF;
+			letter-spacing: 1px;
+			font-weight: 100;
+		}
 	}
 
 	.entry-title {
 		transition: letter-spacing 500ms;
-		color: #D4D4D4;
 		text-align: center;
 		font-size: 2em;
 		margin: 2.5% 0;
+		text-transform: uppercase;
 	}
 
 	.entry-date {
 		padding-bottom: 2.5%;
 		text-align: center;
 		color: #ff4081;
+		text-transform: uppercase;
 	}
 
 	.more-link {
@@ -188,7 +203,19 @@ article.post:hover {
 		letter-spacing: 8px;
 		font-size: 0.8em;
 	}
+
+	.related a {
+		font-weight: 100;
+	}
 	
+	.entry-footer {
+		nav {
+			background-color: #1F2128;
+			font-weight: 100;
+			box-shadow: none !important;
+		}
+	}
+
 }
 
 .navigation.pagination {

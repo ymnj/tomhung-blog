@@ -11,24 +11,6 @@
         </div>
         <?php endif; ?>
 
-        <?php if (!empty($p->audio)):?>
-        <div class="post-thumbnail">
-            <iframe width="100%" height="200px" class="embed-responsive-item" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=<?php echo $p->audio;?>&amp;auto_play=false&amp;visual=true"></iframe>
-        </div>
-        <?php endif; ?>
-
-        <?php if (!empty($p->video)):?>
-        <div class="post-thumbnail">
-            <iframe width="100%" height="315px" class="embed-responsive-item" src="https://www.youtube.com/embed/<?php echo $p->video; ?>" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <?php endif; ?>
-
-        <?php if (!empty($p->quote)):?>
-        <div class="post-blockquote">
-            <blockquote class="quote"><?php echo $p->quote ?></blockquote>
-        </div>
-        <?php endif; ?>
-
         <!---------------------------- MAIN CONTENT ---------------------------->
         
         <div class="cat-links">
